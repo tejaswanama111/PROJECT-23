@@ -40,7 +40,7 @@ function setup() {
 
 	Engine.run(engine);
   
-	box1 = new Box(400,650,200,20);
+	box1 = new Box(400,650,200,30);
 	box2 = new Box(300,610,20,100);
 	box3 = new Box(500,610,20,100);  
 }
