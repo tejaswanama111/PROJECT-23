@@ -19,7 +19,7 @@ function setup() {
 	engine = Engine.create();
     world = engine.world;
 
-	packageSprite=createSprite(width/2, 80, 10,10);
+	packageSprite=createSprite(width/2, 80, 20,20);
 	packageSprite.addImage(packageIMG)
 	packageSprite.scale=0.2
 
@@ -30,7 +30,7 @@ function setup() {
 	groundSprite=createSprite(width/2, height-35, width,10);
 	groundSprite.shapeColor=color(255);
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 15 , {restitution:0, isStatic:true});
 	World.add(world, packageBody);
 
 	//Create a Ground
